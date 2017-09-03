@@ -1,0 +1,100 @@
+
+/*background: rgba(23, 25, 255, 0.21) no-repeat center  fixed;*/
+
+/*CSS Start*/
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Arial";
+	text-align: left;
+	/*background-color: rgba(23, 25, 255, 0.16);*/
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+	
+}
+
+nav, footer {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(23, 25, 255, 0.50);
+	position: absolute;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+ul {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+li {
+	margin: 10px 20px;
+}
+
+.content {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+.column {
+	padding: 80px 20px;
+	flex-grow: 1;
+}
+
+.clmn-l {
+	background-color: rgba(23, 25, 255, 0.31);
+}
+
+.clmn-m {
+	background-color: rgba(23, 25, 255, 0.16);
+	flex-grow: 4;
+}
+
+.clmn-r {
+	background-color: rgba(23, 25, 255, 0.31);
+}
+
+img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+ul {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	display: block;
+	flex-direction: row;
+}
+
+
