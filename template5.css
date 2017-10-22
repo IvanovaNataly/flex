@@ -1,0 +1,152 @@
+/*common*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    margin: 0;
+    padding: 0 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.wrap>div {
+    outline: 1px solid cornflowerblue;
+}
+.header {
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    margin: 0 auto 30px;
+    padding: 30px 0 10px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.plazma {
+    background: #222;
+    width: 100%;
+    height: 40px;
+    max-width: 960px;
+    min-width: 430px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    margin: auto;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+.footer {
+    background: #222;
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    color: #eee;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/*header*/
+.moto {
+    background: #222;
+    width: 230px;
+    height: 30px;
+}
+.logo {
+    background: #222;
+    width: 130px;
+    height: 30px;
+}
+
+
+/*main*/
+.posts {
+    margin-bottom: 30px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-item {
+    margin-bottom: 30px;
+    flex-basis: 33.33%;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post-img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.post-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+
+    .post-item {
+        flex-basis: 100%;
+
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .post-img {
+        margin-right: 30px;
+    }
+
+    .post-item:nth-child(even) .post-img {
+        order: 2;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .post-title {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .post-img {
+        display: none;
+    }
+
+
+}
+
+
